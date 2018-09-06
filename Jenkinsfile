@@ -30,7 +30,7 @@ pipeline {
                 script {
                     def jarServer = Artifactory.newServer url: 'http://localhost:8081/artifactory/'
                     jarServer.username = 'admin'
-                    jarServer.password = 'password'
+                    jarServer.password = 'password1'
                     def rtGradle = Artifactory.newGradleBuild()
 
                     rtGradle.usesPlugin = true
